@@ -10,14 +10,15 @@ When doing a C++ to MIPS conversion, the conversion can be done in the following
 Before you begin, please make sure to either fork this repository or create a new private repository. Please note that your repository must remain private until after the submission date.
 
 ## Expected Output:
-> Value of a: 25
-> Value of b: 31
-> Value of c: 18
-> Value of d: 49
+Value of a: 25
+Value of b: 31
+Value of c: 18
+Value of d: 49
 
 ## Submission
 For submission send link of your repository in ilearn and add me (username **sohe1l**) as a collaborator to your repo. You can read more about adding a collaborator here: [https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository](https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository)
 When you have completed the assignment please commit all work done to your private repository. This can be done with the following commands:
-> git add .
-> git commit -m "some message"
-> git push
+
+git add .
+git commit -m "some message"
+git push
