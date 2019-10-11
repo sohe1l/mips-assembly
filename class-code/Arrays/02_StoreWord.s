@@ -1,4 +1,4 @@
-# Examples for threee different use case of lw instruction
+# Examples for threee different use case of sw instruction
 # First we are defining system calls for better readability
 .eqv PRINT_INT 1
 .eqv SYS_EXIT 10
