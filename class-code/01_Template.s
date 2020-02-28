@@ -16,6 +16,9 @@
 																	
 main:                  # indicates start of code (first instruction to execute)
                        # ...
+	li $t0, $0, -1
+	
                        
+                                   
 									
 # End of program, leave a blank line afterwards to make SPIM happy
