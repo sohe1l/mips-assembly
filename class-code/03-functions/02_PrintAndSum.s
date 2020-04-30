@@ -1,15 +1,11 @@
-# Examples for printing to console
-# First we are defining system calls for better readability
 .eqv PRINT_INT 1
 .eqv PRINT_STRING 4
 .eqv PRINT_CHAR 11
 .eqv SYS_EXIT 10
 
-	.data
-	
-endl:		.asciiz  "\n"   # used for cout << endl;
+.data	
 
-	.text
+.text
 		
 main:
 	li $a0, 2
@@ -21,19 +17,30 @@ main:
 	jal f2
 	
 	j exit	
-	
-f1:
+
+# sum function
+# calculates sum of two numbers
+# a0: first number
+# a1: second number
+# v0: result of the sum
+f1: 
 	sw $ra, -4($sp)
-	addi $sp, $sp, -4
+	sw $s0, -8($sp)
+	addi $sp, $sp, -8
 	
-	add $a0, $a0, $a1
+	add $s0, $a0, $a1
+	move $a0, $s0
 	jal f2
 	
-	lw $ra, ($sp)
-	addi $sp, $sp, 4
-	move $v0, $a0
+	move $v0, $s0
+	
+	lw $s0, ($sp)
+	lw $ra, 4($sp)
+	addi $sp, $sp, 8
 	jr $ra
 
+# print function
+# a0: the value to print
 f2:
 	li $v0, PRINT_INT
 	syscall
@@ -44,4 +51,3 @@ f2:
 exit:
 		li $v0, SYS_EXIT
 		syscall			# program exits.
-		
