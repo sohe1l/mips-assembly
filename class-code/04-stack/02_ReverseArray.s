@@ -41,7 +41,7 @@ loop:
 	move $t1, $s1
 loop2:
 	# load the number from stack
-	lw $t2, 4($sp)
+	lw $t2, 0($sp)
 	addi $sp, $sp, 4
 	
 	# save to the array
