@@ -42,7 +42,7 @@ Please note:
 5 points - Push operation  
 5 points - Pop operation  
 5 points - Max operation  
-5 points - Rotate (bonus)  
+10 points - Rotate (bonus)  
 
 ## Submission:  
 
